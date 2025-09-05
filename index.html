@@ -1,24 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MY First Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
-       <div id="nav-container" class ="flex">
-        <div>
-            <h1>Disha Patidar</h1>
+        <div id="nav-container" class="flex">
+            <div>
+                <h1 class="gradient-text">Disha Patidar</h1>
+            </div>
+            <ul class="flex">
+                <li><a href="">about</a></li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
         </div>
-        <ul class="flex">
-            <li><a href="">about</a></li>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>    
-        </ul>
-       </div> 
     </nav>
     <main>
         <!-- hero section -->
@@ -26,8 +28,14 @@
         <section id="main-hero-section">
             <div class="hero-section container flex">
                 <div class="profile-image">
-                    <img src="./assets/PASSPORT.jpg" alt="disha image" width="350" height="350">
-                </div>  
+                    <div class="profile-ring">
+                        <img src="./assets/PASSPORT.jpg" alt="disha image" width="350" height="350">
+                        <div class="orbit-dot1"></div>
+                        <div class="orbit-dot dot2"></div>
+                        <div class="orbit-dot dot3"></div>
+                        <div class="orbit-dot dot4"></div>
+                    </div>
+                </div>
                 <div id="profile-info">
                     <p>Hello,I'm</p>
                     <h1>Disha Patidar</h1>
@@ -73,12 +81,210 @@
                         </div>
                     </div>
                     <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iste iure aliquid optio nulla praesentium blanditiis porro tempore laboriosam assumenda quasi modi obcaecati, ipsum pariatur provident, repudiandae, esse quis adipisci.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est iste iure aliquid optio nulla
+                            praesentium blanditiis porro tempore laboriosam assumenda quasi modi obcaecati, ipsum
+                            pariatur provident, repudiandae, esse quis adipisci.</p>
                     </div>
 
                 </div>
             </div>
         </div>
+        </section>
+        <!-- experience section -->
+        <section id="experienc-section">
+            <div class="container experience-container">
+                <p> Explore my </p>
+                <h2>Experience</h2>
+                <div class="experience-div flex">
+                    <div class="frontend exp-area">
+                        <h3>
+                            Frontend Devlopment
+                        </h3>
+                        <div class="flex tech-list">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <h4>HTML</h4>
+                                        <p>experienced</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <h4>SAAS</h4>
+                                        <p>experienced</p>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <h4>TYPESCRIPT</h4>
+                                        <p>experienced</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <h4>css</h4>
+                                        <p>experienced</p>
+                                    </div>
+
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <h4>JAVASCRIPT</h4>
+                                        <p>experienced</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <h4>REACT</h4>
+                                        <p>experienced</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="frontend exp-area">
+                        <h3>
+                            Frontend Devlopment
+                        </h3>
+                        <div class="flex tech-list">
+                            <ul>
+                                <li>
+                                    <div>
+                                        <h4>HTML</h4>
+                                        <p>experienced</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <h4>SAAS</h4>
+                                        <p>experienced</p>
+
+                                    </div>
+
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <h4>TYPESCRIPT</h4>
+                                        <p>experienced</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                            <ul>
+                                <li>
+                                    <div>
+                                        <h4>css</h4>
+                                        <p>experienced</p>
+                                    </div>
+
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <h4>JAVASCRIPT</h4>
+                                        <p>experienced</p>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div>
+                                        <h4>REACT</h4>
+                                        <p>experienced</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <!-- project sction -->
+        <section id="project-section">
+            <div class="container project-container">
+                <p>browse my recent</p>
+                <h2>Projects</h2>
+
+                <div class="projects flex">
+                    <div class="project-card">
+                        <img src="./assets/project-1.png" alt="project image" width="100" height="100">
+                        <h3>Project 1</h3>
+                        <div class="flex">
+                            <a href="">Github</a>
+                            <a href="">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/project-2.png" alt="project image" width="100" height="100">
+                        <h3>Project 2</h3>
+                        <div class="flex">
+                            <a href="">Github</a>
+                            <a href="">Live Demo</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <img src="./assets/project-3.png" alt="project image" width="100" height="100">
+                        <h3>Project 3</h3>
+                        <div class="flex">
+                            <a href="">Github</a>
+                            <a href="">Live Demo</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- contact section -->
+        <footer id="contact-section">
+            <div class="contact-container">
+                <p>Get in Touch</p>
+                <h2 class="gradient-text">Contact Me</h2>
+
+                <!-- Contact buttons -->
+                <div class="info-div">
+                    <a href="./assets/email.png" class="contact-btn">
+                        <i class="fas fa-envelope"></i> Example@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank" class="contact-btn">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+
+                <!-- Footer navigation -->
+                <nav class="last-nav">
+                    <a href="#about">About</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact-section">Contact</a>
+                </nav>
+
+                <!-- Copyright -->
+                <p id="copyright">
+                    Copyright © 2023 John Doe. All Rights Reserved.
+                </p>
+            </div>
+        </footer>
+
     </main>
 </body>
+
 </html>

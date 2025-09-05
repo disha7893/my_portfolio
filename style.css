@@ -40,7 +40,7 @@ li{
 .container{
     width:100%;
     height: 100vh;
-    padding: 0px 200px;
+    padding-inline: 100px;
     /* background-color: rgb(238, 181, 181); */
     padding-bottom: 150px
 }
@@ -65,6 +65,74 @@ a:hover{
     justify-content: space-around;
     text-align: center;
 }
+
+.profile-ring {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-pic {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  object-fit: cover;
+}
+
+/* Orbiting Dots Base */
+.orbit-dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  transform-origin: -200px center; /* distance from profile */
+}
+
+/* Different dots */
+.dot1 {
+  background: #6d5dfc; /* purple */
+  animation: orbit1 8s linear infinite;
+}
+
+.dot2 {
+  background: #ff7e67; /* orange */
+  animation: orbit2 10s linear infinite;
+}
+
+.dot3 {
+  background: #4cd964; /* green */
+  animation: orbit3 12s linear infinite;
+}
+
+.dot4 {
+  background: #fdd835; /* yellow */
+  animation: orbit4 14s linear infinite;
+}
+
+/* Orbit Animations (different speeds/directions) */
+@keyframes orbit1 {
+  0%   { transform: rotate(0deg) translateX(200px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(200px) rotate(-360deg); }
+}
+
+@keyframes orbit2 {
+  0%   { transform: rotate(0deg) translateX(220px) rotate(0deg); }
+  100% { transform: rotate(-360deg) translateX(220px) rotate(360deg); }
+}
+
+@keyframes orbit3 {
+  0%   { transform: rotate(0deg) translateX(240px) rotate(0deg); }
+  100% { transform: rotate(360deg) translateX(240px) rotate(-360deg); }
+}
+
+@keyframes orbit4 {
+  0%   { transform: rotate(0deg) translateX(260px) rotate(0deg); }
+  100% { transform: rotate(-360deg) translateX(260px) rotate(360deg); }
+}
+
+
 
 #profile-info{
     display:flex;
@@ -135,7 +203,7 @@ a:hover{
 }
 
 .about-me{
-    margin-top: 5 rem;
+    margin-top: 5rem;
     gap:4rem;
     margin-right: 3rem;
 }
@@ -159,7 +227,347 @@ a:hover{
 }
 
 #abour-para{
-    margin-top: 2 rem;
+    margin-top: 2rem;
     text-align: justify;
     color:#3f3d3d;
 }
+
+
+/* experience section */
+
+
+.experience-container{
+    margin-top: 5rem;
+}
+
+.experience-container > p{
+    text-align: center;
+    color:#eb8a8a;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.experience-container > h2{
+    font-size: 2rem;
+}
+
+.experience-div {
+    margin-top: 5rem;
+}
+
+
+.frontend{
+    padding: 50px ;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+
+.Frontend h3 {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+.tech-list {
+   gap: 100px;
+
+}
+
+.tech-list ul li {
+    margin: 20px 0px;
+}
+
+.tech-list ul li h4 {
+    margin-bottom: 10px;
+}
+
+#project-section{
+    margin-top: 5rem;
+}
+
+.project-container >p{
+    text-align: center;
+    color:#776e6e;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-container > h2{
+    font-size: 2rem;
+}
+
+.projects{
+    margin-top: 5rem;
+}
+
+.projects #project{
+    padding:20px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #222121;
+}
+
+.projects #project img{
+    width: 250px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.projects #project h3{
+    margin: 20px 0px;
+    margin-bottom: 20px;
+}
+
+.projects #project a{
+    padding: 10px 10px;
+    border:1px solid #1e1d1d;
+    border-radius: 50px;
+}
+
+.projects #project a:hover{
+    color:aliceblue;
+    background-color: black;
+}
+
+/* Footer Section */
+#contact-section {
+  background: #f5f5f5;
+  padding: 60px 20px 30px;
+  text-align: center;
+}
+
+.contact-container p {
+  color: #555;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.contact-container h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.info-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  border: 1px solid #999;
+  border-radius: 20px;
+  padding: 20px 40px;
+  margin: 0 auto 30px;
+  max-width: 600px;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.1rem;
+  color: #111;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.contact-btn i {
+  font-size: 1.4rem;
+}
+
+.contact-btn:hover {
+  color: #d6877b;
+}
+
+.last-nav {
+  margin-top: 20px;
+}
+
+.last-nav a {
+  margin: 0 20px;
+  font-size: 1.2rem;
+  color: #111;
+  transition: 0.3s;
+}
+
+.last-nav a:hover {
+  color: #d6877b;
+  border-bottom: 2px solid #92706b;
+  padding-bottom: 5px;
+}
+
+
+#copyright {
+  margin-top: 20px;
+  color: #444;
+  font-size: 0.9rem;
+}
+
+
+/* ============================
+   CSS-Only Animations (paste at end of style.css)
+   ============================ */
+
+/* Accessibility: disable motion if user prefers reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}
+
+/* 1) Fade-up on load (staggered using nth-child) */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply fade-up to sections automatically on page load */
+.project-container > p,
+.project-container > h2,
+.experience-container > p,
+.experience-container > h2,
+.projects .project-card,
+.contact-container p,
+.contact-container h2,
+.info-div {
+  opacity: 0;
+  animation: fadeUp 0.72s cubic-bezier(.2,.9,.25,1) forwards;
+}
+
+/* stagger timings */
+.project-container > p        { animation-delay: 0s; }
+.project-container > h2       { animation-delay: 0.06s; }
+.experience-container > p     { animation-delay: 0s; }
+.experience-container > h2    { animation-delay: 0.06s; }
+
+.projects .project-card:nth-child(1) { animation-delay: 0.12s; }
+.projects .project-card:nth-child(2) { animation-delay: 0.24s; }
+.projects .project-card:nth-child(3) { animation-delay: 0.36s; }
+
+.contact-container p { animation-delay: 0.14s; }
+.contact-container h2 { animation-delay: 0.20s; }
+.info-div            { animation-delay: 0.28s; }
+
+/* 2) Gradient animated headline (use .gradient-text on headings you want) */
+.gradient-text {
+  background: linear-gradient(90deg,#111,#6d5dfc,#ff7e67,#111);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradientShift 6s ease-in-out infinite;
+}
+@keyframes gradientShift {
+  0%,100% { background-position: 0% 50%; }
+  50%     { background-position: 100% 50%; }
+}
+
+/* 3) Project card: lift + shadow on hover (pure CSS) */
+.project-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 18px;
+  transition: transform .28s cubic-bezier(.2,.9,.25,1), box-shadow .28s;
+  transform-origin: center;
+  will-change: transform, box-shadow;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+.project-card:hover {
+  transform: translateY(-10px) scale(1.01);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+/* small image inside project card to center */
+.project-card img {
+  display: block;
+  margin: 0 auto 12px;
+  border-radius: 8px;
+}
+
+/* 4) Button/pill hover effect using pseudo-element */
+.contact-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: 1px solid #bbb;
+  overflow: hidden;
+  transition: transform .18s ease, color .18s ease;
+  background: transparent;
+  text-decoration: none;
+}
+.contact-btn::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, rgba(109,93,252,0.10), rgba(255,126,103,0.10));
+  transition: width .32s ease;
+  z-index: 0;
+}
+.contact-btn > * { position: relative; z-index: 1; }
+.contact-btn:hover { transform: translateY(-3px); color: #000; }
+.contact-btn:hover::after { width: 100%; }
+
+/* 5) Nav link slide-underline (center-out) */
+nav a {
+  position: relative;
+  padding-bottom: 4px;
+  display: inline-block;
+}
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: #92706b;
+  transition: width .25s ease, left .25s ease;
+}
+nav a:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+/* 6) Floating blurred shapes behind hero section (ambient motion) */
+#main-hero-section {
+  position: relative;
+  overflow: hidden;
+}
+#main-hero-section::before,
+#main-hero-section::after {
+  content: "";
+  position: absolute;
+  width: 420px; height: 420px;
+  border-radius: 50%;
+  filter: blur(60px);
+  opacity: .16;
+  pointer-events: none;
+  animation: floaty 18s ease-in-out infinite;
+}
+#main-hero-section::before {
+  background: #6d5dfc;
+  top: -120px; left: -120px;
+}
+#main-hero-section::after {
+  background: #ff7e67;
+  bottom: -140px; right: -140px;
+  animation-delay: -9s;
+}
+@keyframes floaty {
+  0%,100% { transform: translate(0,0); }
+  50%     { transform: translate(20px,-30px); }
+}
+
+/* 7) small polish for footer spacing to match desired order */
+#contact-section { padding: 70px 20px 40px; }
+.contact-container p { margin: 0 0 .25rem; }
+.contact-container h2 { margin: .25rem 0 1.5rem; }
+.info-div { margin: 0 auto 2rem; max-width: 760px; }
+.last-nav { margin-top: 1.25rem; }
+#copyright { margin-top: 1rem; font-size: .95rem; color: #666; }
+
+/* end animation block */
